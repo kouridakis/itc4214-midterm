@@ -1,0 +1,17 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+
+/* Utilities */
+
+.w-30 {
+    width: 30%;
+}
+
+
+/* Home Page Table */
+#th-index:hover,
+#th-title:hover,
+#th-rating:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
