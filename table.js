@@ -123,7 +123,11 @@ $(() => {
 
         let title = $('#game-title').val().trim();
         let rating = $('#game-rating').val().trim();
-        if (!title || !rating) return;
+        $('#game-form').trigger('reset');
+        if (!title || !rating) {
+            alert('Please fill in both fields.');
+            return;
+        }
 
         let game = {
             index: games.length + 1,
@@ -137,4 +141,4 @@ $(() => {
 
     // Create the table when ready!
     updateTable();
-})
+});
