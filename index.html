@@ -5,6 +5,7 @@
     <meta name="description" content="An interactive list of games.">
     <meta name="keywords" content="Games">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="res/favicon.png">
     <title>Home</title>
     <!-- jQuery -->
     <script 
@@ -22,7 +23,36 @@
     <script src="table.js"></script>
 </head>
 <body>
-    <div class="container-xl px-2">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-md sticky-top bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#navbar">
+                <img src="res/profile.jpg" alt="Profile Picture" width="40" height="40" class="d-inline-block rounded-circle">
+                <b class="px-2">MyGamesList</b>
+            </a>
+            <button 
+                class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content" 
+                aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-content">
+                <ul class="navbar-nav my-2 ms-auto text-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#"><b>Home</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html"><b>About</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html"><b>Contact</b></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="container-xl px-2 pb-3">
         <h1 class="text-center pt-5">My Games List</h1>
 
         <form id="game-form" class="text-center pt-3 pb-2">
@@ -59,5 +89,14 @@
             </table>
         </div>
     </div>
+
+    <!-- Footer -->
+    <footer class="container-fluid d-flex justify-content-center align-items-center py-5">
+        <img src="res/profile.jpg" alt="Profile Picture" width="40" height="40" class="d-inline-block rounded-circle">
+        <p class="d-inline-block text-start m-0 px-2">
+            Made by Sebastian Kouridakis<br/>
+            <a href="https://kouridakis.org/" target="_blank">kouridakis.org</a>
+        </p>
+    </footer>
 </body>
 </html>

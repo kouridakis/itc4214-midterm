@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="description" content="Details and gradients.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="res/favicon.png">
     <title>About</title>
     <!-- Bootstrap -->
     <link 
@@ -16,6 +17,35 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-md sticky-top bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#navbar">
+                <img src="res/profile.jpg" alt="Profile Picture" width="40" height="40" class="d-inline-block rounded-circle">
+                <b class="px-2">MyGamesList</b>
+            </a>
+            <button 
+                class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content" 
+                aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-content">
+                <ul class="navbar-nav my-2 ms-auto text-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><b>Home</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#"><b>About</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html"><b>Contact</b></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Content -->
     <div class="container-xl px-2">
         <h1 class="text-center pt-5">About Me</h1>
         
@@ -24,7 +54,7 @@
                 <img src="res/profile.jpg" class="card-img-top" alt="Profile Picture">
                 <div class="card-body">
                     <h5 class="card-title">Sebastian Kouridakis</h5>
-                    <p class="card-text">I'm a Software Development at the <a href="https://www.acg.edu/">American College of Greece</a></p>
+                    <p class="card-text">I'm a Software Development at the <a href="https://www.acg.edu/">American College of Greece</a>.</p>
                 </div>
             </div>
             <div class="about-card card rounded-3 m-3">
@@ -55,7 +85,7 @@
         </div>
 
         <h2 class="text-center pt-5">A Carousel of More Gradients</h2>
-        <div id="carousel" class="carousel slide pb-5" data-bs-ride="carousel">
+        <div id="carousel" class="carousel slide pb-3" data-bs-ride="carousel">
             <div class="carousel-inner rounded-3">
                 <div class="carousel-item active gradient gradient-orange">
                     <div class="carousel-caption">
@@ -92,5 +122,14 @@
             </button>
         </div>
     </div>
+
+    <!-- Footer -->
+    <footer class="container-fluid d-flex justify-content-center align-items-center py-5">
+        <img src="res/profile.jpg" alt="Profile Picture" width="40" height="40" class="d-inline-block rounded-circle">
+        <p class="d-inline-block text-start m-0 px-2">
+            Made by Sebastian Kouridakis<br/>
+            <a href="https://kouridakis.org/" target="_blank">kouridakis.org</a>
+        </p>
+    </footer>
 </body>
 </html>

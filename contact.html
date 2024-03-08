@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="description" content="A contact form.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="res/favicon.png">
     <title>Contact</title>
     <!-- jQuery -->
     <script 
@@ -21,7 +22,36 @@
     <script src="form.js"></script>
 </head>
 <body>
-    <form id="contact-form" class="container">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-md sticky-top bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#navbar">
+                <img src="res/profile.jpg" alt="Profile Picture" width="40" height="40" class="d-inline-block rounded-circle">
+                <b class="px-2">MyGamesList</b>
+            </a>
+            <button 
+                class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content" 
+                aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-content">
+                <ul class="navbar-nav my-2 ms-auto text-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><b>Home</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html"><b>About</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#"><b>Contact</b></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <form id="contact-form" class="container pb-3">
         <h1 class="text-center py-5">Contact Us</h1>
 
         <div class="row">
@@ -57,5 +87,14 @@
             <input type="submit" value="Submit" id="form-submit" class="btn btn-dark">
         </div>
     </form>
+
+    <!-- Footer -->
+    <footer class="container-fluid d-flex justify-content-center align-items-center py-5">
+        <img src="res/profile.jpg" alt="Profile Picture" width="40" height="40" class="d-inline-block rounded-circle">
+        <p class="d-inline-block text-start m-0 px-2">
+            Made by Sebastian Kouridakis<br/>
+            <a href="https://kouridakis.org/" target="_blank">kouridakis.org</a>
+        </p>
+    </footer>
 </body>
 </html>
