@@ -1,14 +1,11 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
 
-/* Utilities */
+/* Home Page */
 
 .w-30 {
     width: 30%;
 }
-
-
-/* Home Page */
 
 #th-index:hover,
 #th-title:hover,
@@ -47,26 +44,31 @@
 .gradient-purple {
     background: linear-gradient(135deg, #6a3093, #a044ff);
 }
-
 .gradient {
-    background-size: 400% 400%;
-
-    -webkit-animation: animatedGradient 15s ease infinite;
-    -moz-animation: animatedGradient 15s ease infinite;
+    background-size: 400% 400%;    
     animation: animatedGradient 15s ease infinite;
-}
-@-webkit-keyframes animatedGradient {
-    0%{background-position:0% 0%}
-    50%{background-position:100% 100%}
-    100%{background-position:0% 0%}
-}
-@-moz-keyframes animatedGradient {
-    0%{background-position:0% 0%}
-    50%{background-position:100% 100%}
-    100%{background-position:0% 0%}
+    -moz-animation: animatedGradient 15s ease infinite;
+    -webkit-animation: animatedGradient 15s ease infinite;
 }
 @keyframes animatedGradient {
-    0%{background-position:0% 0%}
-    50%{background-position:100% 100%}
-    100%{background-position:0% 0%}
+    0%      { background-position: 0% 0% }
+    50%     { background-position: 100% 100% }
+    100%    { background-position: 0% 0% }
+}
+@-moz-keyframes animatedGradient {
+    0%      { background-position: 0% 0% }
+    50%     { background-position: 100% 100% }
+    100%    { background-position: 0% 0% }
+}
+@-webkit-keyframes animatedGradient {
+    0%      { background-position: 0% 0% }
+    50%     { background-position: 100% 100% }
+    100%    { background-position: 0% 0% }
+}
+
+
+/* Contact Page */
+
+#form-submit {
+    font-weight: bold;
 }
